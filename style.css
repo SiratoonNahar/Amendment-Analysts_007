@@ -1,15 +1,28 @@
-
-.container {
-    max-width: 1300px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    background-color: #1A1A2E;
+}
+ 
+.containers{
+    /* border: 2px solid black;  */
+    max-width:1300px;
     margin: auto;
+   
+}
+.container {
     text-align: center;
     font-family: Arial, sans-serif;
-    background-color: #1A1A2E;
-    color: white;
+    /* color: white; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
+    padding: 20px;
 }
 
 h1 {
@@ -30,12 +43,14 @@ h1 {
     font-weight: bold;
     text-align: center;
     padding: 10px 0;
+    color: white;
     /* border-bottom: 1px solid #ccc; */
 }
 
 .grid-item {
     text-align: center;
     padding: 10px 0;
+    color: white;
 }
 
 .crypto {
@@ -45,7 +60,7 @@ h1 {
 }
 
 .crypto-logo {
-    width: 30px;
+    width: 24px;
     height: 28px;
     margin-right: 10px;
 }
@@ -111,21 +126,28 @@ button:hover {
 }
 
 .crypto-info-container h2 {
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 20px;
+    color: white;
 }
 
-.crypto-info-container p {
+.crypto-info-para {
+    /* width: 60%; */
+    font-size: 20px;
+    /* margin-left: 240px; */
+    text-align: center;
     margin-bottom: 40px;
     color: #cccccc;
 }
 
 .learn-crypto-btn {
-    background-color: #00A676;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-color: #000626;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: 1px solid ;
+    margin-top: 40px;
     margin-bottom: 20px;
-    border: none;
+    border: 1px solid #19f0a3;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -164,10 +186,12 @@ button:hover {
 
 .info-card {
     background-color: #2C2C54;
+    margin-top: 30px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     text-align: center;
     color: white;
+    /* box-shadow: rgba(241, 241, 243, 0.25) 0px 13px 27px -5px, rgba(243, 239, 239, 0.3) 0px 8px 16px -8px; */
 }
 
 .info-card h3 {
@@ -178,12 +202,29 @@ button:hover {
 .info-card p {
     margin-bottom: 20px;
     color: #cccccc;
+    text-align: center;
+    animation: fadeIn 1s ease; 
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
+.info-card p:hover{
+    color: #f5c579; /* Change text color on hover */
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 .info-card button {
     background-color: #00A676;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 25px;
     border: none;
     color: white;
     cursor: pointer;
@@ -193,4 +234,130 @@ button:hover {
 .info-card button:hover {
     background-color: #007d57;
 }
+
+
+@media (max-width: 1200px) {
+    .info-item{
+        width: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        /* grid-template-columns: repeat(2, 1fr); */
+    }
+ 
+    .crypto {
+        flex-direction: column;
+    }
+ 
+    .crypto-logo {
+        margin-bottom: 5px;
+    }
+ 
+    .view-other {
+        width: 30vw;
+    }
+ 
+    .container{
+        /* width: 768px; */
+    }
+ 
+    .crypto-info-container{
+        /* margin: auto; */
+        /* max-width: 768px; */
+    }
+ 
+    .crypto-info-container h2 {
+        font-size: 16px;
+    }
+ 
+    .crypto-info-container p {
+        /* margin-bottom: 20px; */
+        font-size: 12px;
+    }
+ 
+    .grid-info-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .info-item{
+        margin-left: 0px;
+        width: 35vw;
+    }
+ 
+    .info-card{
+        grid-template-columns: repeat(2, 1fr);
+        width: 35vw;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .container{
+        overflow: hidden;
+    }
+    .grid-container {
+        font-size: x-small;
+        /* grid-template-columns: 1fr; */
+    }
+ 
+    h1{
+        font-size: medium;
+    }
+    .action button{
+        padding: 5px;
+    }
+ 
+    .view-other {
+        width: auto;
+    }
+ 
+    .crypto-info-container h2 {
+        font-size: 18px;
+    }
+ 
+    .crypto-info-container p {
+        margin-bottom: 10px;
+    }
+ 
+    .grid-info-container {
+        grid-template-columns: 1fr;
+    }
+ 
+    .info-item{
+       
+        width: 40vw;
+        font-size: x-small;
+        height: auto;
+        margin: 0 auto;
+    }
+ 
+    .info-card{
+        width: 60vw;
+        margin: 0 auto;
+    }
+ 
+    .info-card h3{
+        font-size: 16px;
+    }
+ 
+    .info-card p{
+        font-size: small;
+    }
+ 
+    .info-card button{
+        font-size: xx-small;
+        padding: 10px 10px;
+    }
+    .info-icon{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .fa-xl{
+        font-size: 1.0em;
+    }
+}
+ 
+
 
