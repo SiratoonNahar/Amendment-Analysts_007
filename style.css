@@ -56,7 +56,7 @@ h1 {
 .crypto {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .crypto-logo {
@@ -237,8 +237,25 @@ button:hover {
 
 
 @media (max-width: 1200px) {
+    /* .grid-info-container {
+        grid-template-columns: repeat(3, 1fr);
+    } */
     .info-item{
-        width: auto;
+        /* width: auto; */
+        width: 16vw;
+        height: auto;
+    }
+
+    .info-card{
+        width: 18vw;
+        font-size: xx-small;
+    }
+
+    .info-card h3{
+        font-size: 12px;
+    }
+    .info-card button {
+        font-size: larger;
     }
 }
 
@@ -249,7 +266,7 @@ button:hover {
     }
  
     .crypto {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
  
     .crypto-logo {
