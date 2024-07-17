@@ -261,13 +261,7 @@ button:hover {
 
 
 @media (max-width: 768px) {
-    .grid-container {
-        /* grid-template-columns: repeat(2, 1fr); */
-    }
- 
-    .crypto {
-        /* flex-direction: column; */
-    }
+    
  
     .crypto-logo {
         margin-bottom: 5px;
@@ -275,15 +269,6 @@ button:hover {
  
     .view-other {
         width: 30vw;
-    }
- 
-    .container{
-        /* width: 768px; */
-    }
- 
-    .crypto-info-container{
-        /* margin: auto; */
-        /* max-width: 768px; */
     }
  
     .crypto-info-container h2 {
