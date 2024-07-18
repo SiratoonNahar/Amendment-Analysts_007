@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: #2C2C54;
+        }
+        nav img{
+            width: 20%;
+        }
+        nav>div.navcontainer{
+            background-color: #2C2C54;
+            max-width: 1300px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav button{
+            background-color: #00ffa0;
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 100px;
+            border: none;
+            font-weight: bold;
+            padding-right: 20px;
+        }
+        #logo{
+            padding: 25px;
+        }
+        
+        nav div#navlinks a{
+            color: #fff;
+            text-decoration: none;
+            padding-left: 35px;
+        }
+        #menu{
+            padding-left: 20px;
+            display: none;
+        }
+        @media (width <= 750px){
+            #menu{
+                display: inline-block;
+            }
+            #navlinks{
+                display: none;
+            }
+            nav>div.navcontainer{
+                position: relative;
+            }
+            nav #menu:active~div#navlinks{
+                background-color: #2C2C54;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                line-height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navcontainer">
+            <span id="menu"><i class="fa-solid fa-ellipsis-vertical" style="color: #ffffff;"></i></span>
+            <div id="logo">
+                <span style="color: #00ffa0;">Coin</span>
+                <span style="color: #fff;">Echo</span>
+            </div>
+            <div id="navlinks">
+                <a href="#">Home</a>
+                <a href="#">Trade</a>
+                <a href="#">Market</a>
+                <a href="#">Learn</a>
+                <a href="#">Support</a>
+            </div>
+            <button>Sign Up</button>
+            
+        </div>
+    </nav>
+    <header>
+
+    </header>
+</body>
+<script src="https://kit.fontawesome.com/58d3336cff.js" crossorigin="anonymous">
+</script>
+</html>
