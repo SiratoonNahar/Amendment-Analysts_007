@@ -97,5 +97,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch initial data for 1 day
     fetchData(); // This fetches data for 1 day initially
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+ 
+    // Check if a theme is stored in localStorage
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-theme');
+    }
+ 
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+ 
+        // Save the current theme in localStorage
+        if (body.classList.contains('dark-theme')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+});
+ 
  
  
