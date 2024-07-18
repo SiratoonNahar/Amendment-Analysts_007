@@ -73,12 +73,14 @@ nav div#navlinks a{
     border-top: 0.5px solid rgba(255, 255, 255, 0.35);
 }
 #headerh1 h1{
+    margin-top: 120px;
     font-size: 60px;
     font-weight: 900;
     color: #00ffa0;
     line-height: 20px;
 }
 #headerh1 p{
+    margin-top: 20px;
     font-size: 15px;
     font-weight: bold;
     color: #fff;
@@ -101,6 +103,7 @@ header{
     font-size: 15px;
 }
 #get{
+    margin-top: 60px;
     background-color: #00ffa0;
     color: #000;
     padding: 20px 45px ;
@@ -250,7 +253,9 @@ button:hover {
     margin-top: 20px;
     border-radius: 10px;
 }
-
+.crypto-info-container img{
+    width: 50%;
+}
 .crypto-info-container h2 {
     font-size: 40px;
     margin-bottom: 20px;
@@ -259,6 +264,7 @@ button:hover {
 
 .crypto-info-para {
     /* width: 60%; */
+    margin-top: 10px;
     font-size: 20px;
     /* margin-left: 240px; */
     text-align: center;
@@ -329,14 +335,14 @@ button:hover {
     margin-bottom: 20px;
     color: #cccccc;
     text-align: center;
-    animation: fadeIn 1s ease; 
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    /* animation: fadeIn 1s ease;  */
+    /* transition: color 0.3s ease, text-shadow 0.3s ease; */
 }
 
-.info-card p:hover{
-    color: #f5c579; /* Change text color on hover */
+/* .info-card p:hover{
+    color: #f5c579; /* Change text color on hover 
     box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
-}
+} */
 
 @keyframes fadeIn {
     from {
