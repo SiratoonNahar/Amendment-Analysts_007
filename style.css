@@ -1,15 +1,154 @@
-
-.container {
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    background-color: #1A1A2E;
+}
+nav img{
+    width: 20%;
+}
+nav>div.navcontainer{
+    background-color: #1A1A2E;
     max-width: 1300px;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav button{
+    background-color: #00ffa0;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: none;
+    font-weight: bold;
+    padding-right: 20px;
+}
+#logo{
+    padding: 25px;
+}
+
+nav div#navlinks a{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 35px;
+}
+#menu{
+    padding-left: 20px;
+    display: none;
+}
+@media (width <= 750px){
+    #menu{
+        display: inline-block;
+    }
+    #navlinks{
+        display: none;
+    }
+    nav>div.navcontainer{
+        position: relative;
+    }
+    nav #menu:active~div#navlinks{
+        background-color: #2C2C54;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        line-height: 50px;
+    }
+}
+.line-div {
+    align-self: stretch;
+    box-sizing: border-box;
+}
+.line-div {
+    height: 0.5px;
+    position: relative;
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.65));
+    border-top: 0.5px solid rgba(255, 255, 255, 0.35);
+}
+#headerh1 h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: #00ffa0;
+    line-height: 20px;
+}
+#headerh1 p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 20px;
+}
+#headerh1{
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+header{
+    padding: 20px;
+    background-color: #1A1A2E;
+    margin: auto;
+}
+#headerh1 button{
+    font-size: 15px;
+}
+#get{
+    background-color: #00ffa0;
+    color: #000;
+    padding: 20px 45px ;
+    border-radius: 100px;
+    border: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+#start{
+    background-color: transparent;
+    border: 3px solid #00ffa0;
+    color: #00ffa0;
+    padding: 20px 45px ;
+    border-radius: 100px;
+    font-weight: bold;
+}
+@media (max-width: 480px) {
+    #headerh1 h1{
+        font-size: 1.2em;
+        line-height: 10px;
+    }
+
+    #headerh1 p{
+        font-size: 0.9em;
+    }
+
+    #headerh1 button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+}
+
+ 
+.containers{
+    /* border: 2px solid black;  */
+    max-width:1300px;
+    margin: auto;
+   
+}
+.container {
     text-align: center;
     font-family: Arial, sans-serif;
-    background-color: #1A1A2E;
-    color: white;
+    /* color: white; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
+    padding: 20px;
 }
 
 h1 {
@@ -30,22 +169,24 @@ h1 {
     font-weight: bold;
     text-align: center;
     padding: 10px 0;
+    color: white;
     /* border-bottom: 1px solid #ccc; */
 }
 
 .grid-item {
     text-align: center;
     padding: 10px 0;
+    color: white;
 }
 
 .crypto {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .crypto-logo {
-    width: 30px;
+    width: 24px;
     height: 28px;
     margin-right: 10px;
 }
@@ -111,21 +252,28 @@ button:hover {
 }
 
 .crypto-info-container h2 {
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 20px;
+    color: white;
 }
 
-.crypto-info-container p {
+.crypto-info-para {
+    /* width: 60%; */
+    font-size: 20px;
+    /* margin-left: 240px; */
+    text-align: center;
     margin-bottom: 40px;
     color: #cccccc;
 }
 
 .learn-crypto-btn {
-    background-color: #00A676;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-color: #000626;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: 1px solid ;
+    margin-top: 40px;
     margin-bottom: 20px;
-    border: none;
+    border: 1px solid #19f0a3;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -164,10 +312,12 @@ button:hover {
 
 .info-card {
     background-color: #2C2C54;
+    margin-top: 30px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     text-align: center;
     color: white;
+    /* box-shadow: rgba(241, 241, 243, 0.25) 0px 13px 27px -5px, rgba(243, 239, 239, 0.3) 0px 8px 16px -8px; */
 }
 
 .info-card h3 {
@@ -178,12 +328,29 @@ button:hover {
 .info-card p {
     margin-bottom: 20px;
     color: #cccccc;
+    text-align: center;
+    animation: fadeIn 1s ease; 
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
+.info-card p:hover{
+    color: #f5c579; /* Change text color on hover */
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 .info-card button {
     background-color: #00A676;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 25px;
     border: none;
     color: white;
     cursor: pointer;
@@ -195,6 +362,132 @@ button:hover {
 }
 
 
+@media (max-width: 1200px) {
+    /* .grid-info-container {
+        grid-template-columns: repeat(3, 1fr);
+    } */
+    .info-item{
+        /* width: auto; */
+        width: 16vw;
+        height: auto;
+    }
+
+    .info-card{
+        width: 18vw;
+        font-size: xx-small;
+    }
+
+    .info-card h3{
+        font-size: 12px;
+    }
+    .info-card button {
+        font-size: larger;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+ 
+    .crypto-logo {
+        margin-bottom: 5px;
+    }
+ 
+    .view-other {
+        width: 30vw;
+    }
+ 
+    .crypto-info-container h2 {
+        font-size: 16px;
+    }
+ 
+    .crypto-info-container p {
+        /* margin-bottom: 20px; */
+        font-size: 12px;
+    }
+ 
+    .grid-info-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .info-item{
+        margin-left: 0px;
+        width: 35vw;
+    }
+ 
+    .info-card{
+        grid-template-columns: repeat(2, 1fr);
+        width: 35vw;
+    }
+    
+}
+ 
+@media (max-width: 480px) {
+    .container{
+        overflow: hidden;
+    }
+    .grid-container {
+        font-size: x-small;
+        /* grid-template-columns: 1fr; */
+    }
+ 
+    h1{
+        font-size: medium;
+    }
+    .action button{
+        padding: 5px;
+    }
+ 
+    .view-other {
+        width: auto;
+    }
+ 
+    .crypto-info-container h2 {
+        font-size: 18px;
+    }
+ 
+    .crypto-info-container p {
+        margin-bottom: 10px;
+    }
+ 
+    .grid-info-container {
+        grid-template-columns: 1fr;
+    }
+ 
+    .info-item{
+       
+        width: 40vw;
+        font-size: x-small;
+        height: auto;
+        margin: 0 auto;
+    }
+ 
+    .info-card{
+        width: 60vw;
+        margin: 0 auto;
+    }
+ 
+    .info-card h3{
+        font-size: 16px;
+    }
+ 
+    .info-card p{
+        font-size: small;
+    }
+ 
+    .info-card button{
+        font-size: xx-small;
+        padding: 10px 10px;
+    }
+    .info-icon{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .fa-xl{
+        font-size: 1.0em;
+    }
+}
+ 
 /* monty */
 .FAQS {
     max-width: 1300px;
