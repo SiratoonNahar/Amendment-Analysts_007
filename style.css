@@ -510,6 +510,13 @@ button:hover {
 .faqs-title {
     margin-top: 20px;
 }
+.follow-design-trends {
+    font-size: larger;
+}
+.frequently-asked-questions{
+    margin-top: 50px;
+    text-align: justify;
+}
 .cryptoAction {
     max-width: 1300px;
     margin: auto;
@@ -523,7 +530,7 @@ button:hover {
 }
 .question-container {
     display: flex;
-    gap: 3rem;
+    gap: 6rem;
     margin: 50px 224px 50px 224px;
 }
 .FaqPart1{
@@ -538,90 +545,115 @@ button:hover {
     display: flex;
     width: 282px;
     height: 29px;
-    text-align: justify;
-    font-size: larger;
+    text-align: left;
+    font-size:xx-large;
     font-weight: bolder;
+    margin-top: 30px;
 }
 .cryptocurrency-is-a {
     display: flex;
     width: 590px;
     height: 48px;
-    text-align: justify;
+    text-align: left;
+    margin-top: 60px;
+    line-height: 35px;
+    font-size:x-large;
+    margin-bottom: 70px;
 }
 .what-is-a {
     display: flex;
     width: 249px;
     height: 29px;
-    font-size: larger;
+    font-size:xx-large;
     font-weight: bolder;
-    text-align: justify;
+    text-align: left;
+    margin-top: 60px;
 }
 .a-blockchain-is {
     display: flex;
     width: 590px;
     height: 48px;
-    text-align: justify;
+    text-align: left;
+    margin-top: 60px;
+    font-size:x-large;
+    line-height: 35px;
+    margin-bottom: 40px;
 }
 .how-do-i {
     display: flex;
     width: 376px;
     height: 29px;
-    font-size: large;
+    font-size:xx-large;
     font-weight: bolder;
-    text-align: justify;
+    text-align: left;
+    margin-top: 60px;
 }
 .choose-a-reliable {
     display: flex;
     width: 590px;
     height: 48px;
-    text-align: justify;
+    text-align: left;
+    margin-top: 60px;
+    font-size:x-large;
+    line-height: 35px;
+    margin-bottom: 40px;
 }
 .how-do-i1 {
     display: flex;
     width: 494px;
     height: 29px;
-    font-size: larger;
+    font-size:xx-large;
     font-weight: bolder;
-    text-align: justify;
+    text-align: left;
+    margin-top: 30px;
 }
 .use-strong-passwords {
     display: flex;
     width: 590px;
     height: 48px;
-    text-align: justify;
+    text-align: left;
+    margin-top: 60px;
+    font-size:x-large;
+    line-height: 35px;
+    margin-bottom: 70px;
 }
 .what-is-a1 {
     display: flex;
     width: 483px;
     height: 29px;
-    font-size: larger;
+    font-size:xx-large;
     font-weight: bolder;
-    text-align: justify;
+    text-align: left;
+    margin-top: 60px;
 }
 .a-cryptocurrency-wallet {
     display: flex;
     width: 590px;
     height: 48px;
-    text-align: justify;
+    text-align: left;
+    margin-top: 60px;
+    font-size:x-large;
+    line-height: 35px;
+    margin-bottom: 40px;
 }
 .what-are-the {
     display: flex;
     width: 520px;
     height: 29px;
-    font-size: larger;
+    font-size:xx-large;
     font-weight: bolder;
-    text-align: justify;
+    margin-top: 60px;
+    text-align: left;
 }
 .popular-cryptocurrencies-inclu {
     display: flex;
     width: 590px;
     height: 48px;
-    text-align: justify;
-}
-.social-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
+    font-size:x-large;
+    margin-top: 60px;
+    line-height: 35px;
+    margin-bottom: 40px;
 }
 .cryptoAction {
     max-width: 1300px;
@@ -660,7 +692,7 @@ button:hover {
     border: 0;
     outline: 0;
     background-color: rgba(255, 255, 255, 0.1);
-    height: 77px;
+    height: 50px;
     border-radius: 11px;
     flex-direction: row;
     padding: 27px 34px 26px;
@@ -677,7 +709,8 @@ button:hover {
     min-width: 120px;
     z-index: 2;
 }
-.email-topic1 {
+.email-topic1,
+.email-topic {
     font-size:xx-large;
 }
 .send-message-button {
@@ -696,7 +729,7 @@ button:hover {
   border: 0;
   outline: 0;
   background-color: rgba(255, 255, 255, 0.1);
-  height: 77px;
+  height: 50px;
   border-radius: 11px;
   flex-direction: row;
   padding: 27px 34px 26px;
@@ -732,7 +765,7 @@ button:hover {
 .send-message-button {
   cursor: pointer;
   border: 0;
-  padding: 26px 45px;
+  padding: 15px 45px;
   background-color: #00ffa21d;
   border-radius: 47px;
   flex-direction: row;
@@ -765,12 +798,97 @@ button:hover {
     font-size: 25px;
     text-align:center
 }
-.social-icons1 {
-    font-size: xx-large;
-}
-.social-container{
-    display: flex;
-    margin-top: 100px;
-    justify-content: space-between;
 
+/* responsive by mahantesh */
+
+@media (max-width: 1024px) {
+    .question-container {
+        flex-direction: column;
+        gap: 3rem;
+        margin: 20px;
+    }
+    .FaqPart1, .FaqPart2 {
+        margin: 0;
+    }
+    .cryptoAction {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .question-container {
+        margin: 10px;
+    }
+    .frequently-asked-questions {
+        text-align: center;
+        margin: 20px;
+    }
+    .cryptocurrency-is-a,
+    .a-blockchain-is,
+    .choose-a-reliable,
+    .use-strong-passwords,
+    .a-cryptocurrency-wallet,
+    .popular-cryptocurrencies-inclu {
+        width: auto;
+        text-align: center;
+    }
+    .contact-form {
+        width: auto;
+        margin: 10px;
+    }
+    .email-topic,
+    .email-topic1 {
+        font-size: large;
+    }
+    .send-message-button {
+        font-size: large;
+    }
+}
+
+@media (max-width: 480px) {
+    .question-container {
+        max-width: 300px;
+        gap: 0.5rem;
+        margin-left: 20px;
+        text-align: left;
+    }
+    .cryptocurrency-is-a,
+    .a-blockchain-is,
+    .choose-a-reliable,
+    .use-strong-passwords,
+    .a-cryptocurrency-wallet,
+    .popular-cryptocurrencies-inclu {
+        font-size: small;
+        width: 350px;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .email-topic {
+        font-size: small;
+        margin-left: 2rem;
+    }
+    .email-topic1{
+        font-size: small;
+        margin-left: 2rem;
+    }
+    .your-topic {
+        margin-left: 0;
+    }
+    .send-message-button {
+        font-size: small;
+        margin-left: 7rem;
+    }
+    .what-are-the,
+    .what-is-a1,
+    .how-do-i1,
+    .how-do-i,
+    .what-is-a,
+    .what-is-cryptocurrency {
+        font-size: small;
+        font-weight: bolder;
+        line-height: 1.5;
+        width: 350px;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
 }
