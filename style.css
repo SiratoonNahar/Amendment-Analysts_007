@@ -575,22 +575,18 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    padding: 0 20px;
 }
-
 .faqs-title {
     margin-top: 20px;
 }
-
 .follow-design-trends {
     font-size: larger;
 }
-
 .frequently-asked-questions {
     margin-top: 50px;
     text-align: justify;
 }
-
 .cryptoAction {
     max-width: 1300px;
     margin: auto;
@@ -600,174 +596,55 @@ button:hover {
     color: white;
     display: flex;
     align-items: center;
-    margin: 0;
+    padding: 0 20px;
 }
-
 .question-container {
     display: flex;
-    gap: 6rem;
-    margin: 50px 224px 50px 224px;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 50px 20px;
+    justify-content: center;
 }
-
-.FaqPart1 {
-    margin-left: 150px;
-    justify-content: flex-start;
+.FaqPart1, .FaqPart2 {
+    flex: 1 1 45%;
+    margin: 10px;
 }
-
-.FaqPart2 {
-    margin-right: 100px;
-    justify-content: flex-start;
-}
-
-.what-is-cryptocurrency {
-    display: flex;
-    width: 282px;
-    height: 29px;
-    text-align: left;
-    font-size: xx-large;
-    font-weight: bolder;
-    margin-top: 30px;
-}
-
-.cryptocurrency-is-a {
-    display: flex;
-    width: 590px;
-    height: 48px;
-    text-align: left;
-    margin-top: 60px;
-    line-height: 35px;
-    font-size: x-large;
-    margin-bottom: 70px;
-}
-
-.what-is-a {
-    display: flex;
-    width: 249px;
-    height: 29px;
-    font-size: xx-large;
-    font-weight: bolder;
-    text-align: left;
-    margin-top: 60px;
-}
-
-.a-blockchain-is {
-    display: flex;
-    width: 590px;
-    height: 48px;
-    text-align: left;
-    margin-top: 60px;
-    font-size: x-large;
-    line-height: 35px;
-    margin-bottom: 40px;
-}
-
-.how-do-i {
-    display: flex;
-    width: 376px;
-    height: 29px;
-    font-size: xx-large;
-    font-weight: bolder;
-    text-align: left;
-    margin-top: 60px;
-}
-
-.choose-a-reliable {
-    display: flex;
-    width: 590px;
-    height: 48px;
-    text-align: left;
-    margin-top: 60px;
-    font-size: x-large;
-    line-height: 35px;
-    margin-bottom: 40px;
-}
-
-.how-do-i1 {
-    display: flex;
-    width: 494px;
-    height: 29px;
-    font-size: xx-large;
-    font-weight: bolder;
-    text-align: left;
-    margin-top: 30px;
-}
-
-.use-strong-passwords {
-    display: flex;
-    width: 590px;
-    height: 48px;
-    text-align: left;
-    margin-top: 60px;
-    font-size: x-large;
-    line-height: 35px;
-    margin-bottom: 70px;
-}
-
-.what-is-a1 {
-    display: flex;
-    width: 483px;
-    height: 29px;
-    font-size: xx-large;
-    font-weight: bolder;
-    text-align: left;
-    margin-top: 60px;
-}
-
-.a-cryptocurrency-wallet {
-    display: flex;
-    width: 590px;
-    height: 48px;
-    text-align: left;
-    margin-top: 60px;
-    font-size: x-large;
-    line-height: 35px;
-    margin-bottom: 40px;
-}
-
+.what-is-cryptocurrency,
+.what-is-a,
+.how-do-i,
+.how-do-i1,
+.what-is-a1,
 .what-are-the {
     display: flex;
-    width: 520px;
-    height: 29px;
     font-size: xx-large;
     font-weight: bolder;
-    margin-top: 60px;
     text-align: left;
+    margin-top: 30px;
 }
-
+.cryptocurrency-is-a,
+.a-blockchain-is,
+.choose-a-reliable,
+.use-strong-passwords,
+.a-cryptocurrency-wallet,
 .popular-cryptocurrencies-inclu {
     display: flex;
-    width: 590px;
-    height: 48px;
     text-align: left;
     font-size: x-large;
-    margin-top: 60px;
     line-height: 35px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-.cryptoAction {
-    max-width: 1300px;
-    height: auto;
-    margin: auto;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #1A1A2E;
-    color: white;
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-
 .contact-form {
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 30px;
+    width: 100%;
+    max-width: 500px;
 }
-
 .email-address {
     position: relative;
     z-index: 2;
 }
-
 .email-topic,
 .topic-input {
     align-self: stretch;
@@ -775,13 +652,11 @@ button:hover {
     align-items: flex-start;
     justify-content: flex-start;
 }
-
 .email-topic {
     flex-direction: column;
     padding: 0 0 17px;
     gap: 15px;
 }
-
 .topic-input {
     width: 100%;
     border: 0;
@@ -798,24 +673,20 @@ button:hover {
     min-width: 250px;
     z-index: 2;
 }
-
 .your-topic {
     position: relative;
     display: inline-block;
     min-width: 120px;
     z-index: 2;
 }
-
 .email-topic1,
 .email-topic {
     font-size: xx-large;
 }
-
 .send-message-button {
     margin-top: 20px;
     font-size: xx-large;
 }
-
 .email-topic-child,
 .email-topic1 {
     align-self: stretch;
@@ -823,7 +694,6 @@ button:hover {
     align-items: flex-start;
     justify-content: flex-start;
 }
-
 .email-topic-child {
     width: 100%;
     border: 0;
@@ -840,12 +710,10 @@ button:hover {
     min-width: 250px;
     z-index: 2;
 }
-
 .email-topic1 {
     flex-direction: column;
     gap: 15px;
 }
-
 .send-message-button-child {
     margin-top: 20px;
     height: 81px;
@@ -855,18 +723,15 @@ button:hover {
     background-color: #00ffa0;
     display: none;
 }
-
 .send-message-button:hover {
     background-color: #00cc6e;
 }
-
 .contact-form,
 .send-message-button {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
-
 .send-message-button {
     cursor: pointer;
     border: 0;
@@ -877,11 +742,9 @@ button:hover {
     white-space: nowrap;
     z-index: 2;
 }
-
 .send-message-button:hover {
     background-color: #00cc6d4a;
 }
-
 .contact-form {
     width: 500px;
     flex-direction: column;
@@ -890,129 +753,86 @@ button:hover {
     max-width: 100%;
     font-size: 24px;
 }
-
 .get-it-on {
     margin-top: 10px;
     font-size: 40px;
 }
-
 .pt-1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
-
 .provide-easy-access {
     margin-top: 20px;
     font-size: 25px;
-    text-align: center
+    text-align: center;
 }
 
-/* responsive by mahantesh */
+@media (max-width: 1200px) {
+    .question-container {
+        gap: 4rem;
+    }
+}
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
     .question-container {
         flex-direction: column;
-        gap: 3rem;
+        align-items: center;
+        gap: 2rem;
         margin: 20px;
     }
-
-    .FaqPart1,
-    .FaqPart2 {
+    .FaqPart1, .FaqPart2 {
         margin: 0;
+        text-align: center;
     }
-
+    .faq-title {
+        font-size: larger;
+    }
+    .cryptocurrency-is-a,
+    .a-blockchain-is,
+    .choose-a-reliable,
+    .use-strong-passwords,
+    .a-cryptocurrency-wallet,
+    .popular-cryptocurrencies-inclu {
+        width: auto;
+    }
     .cryptoAction {
+        display: flex;
         flex-direction: column;
     }
 }
 
 @media (max-width: 768px) {
-    .question-container {
-        margin: 10px;
+    .cryptoAction, .FAQS {
+        padding: 20px;
     }
-
-    .frequently-asked-questions {
-        text-align: center;
-        margin: 20px;
+    .pt-1 {
+        margin-left: 0;
     }
-
-    .cryptocurrency-is-a,
-    .a-blockchain-is,
-    .choose-a-reliable,
-    .use-strong-passwords,
-    .a-cryptocurrency-wallet,
-    .popular-cryptocurrencies-inclu {
-        width: auto;
-        text-align: center;
-    }
-
     .contact-form {
-        width: auto;
-        margin: 10px;
+        margin-left: 0;
+        width: 100%;
     }
-
-    .email-topic,
-    .email-topic1 {
-        font-size: large;
+    .question-container {
+        gap: 1rem;
     }
-
-    .send-message-button {
-        font-size: large;
+    .faq-title {
+        font-size: medium;
     }
 }
 
-@media (max-width: 480px) {
-    .question-container {
-        max-width: 300px;
-        gap: 0.5rem;
-        margin-left: 20px;
-        text-align: left;
+@media (max-width: 576px) {
+    .faq-title, .cryptocurrency-is-a, .a-blockchain-is, .choose-a-reliable, .use-strong-passwords, .a-cryptocurrency-wallet, .popular-cryptocurrencies-inclu {
+        font-size: medium;
     }
-
-    .cryptocurrency-is-a,
-    .a-blockchain-is,
-    .choose-a-reliable,
-    .use-strong-passwords,
-    .a-cryptocurrency-wallet,
-    .popular-cryptocurrencies-inclu {
-        font-size: small;
-        width: 350px;
-        margin-top: 0.5rem;
-        margin-bottom: 1.5rem;
+    .email-topic, .topic-input, .email-topic1, .email-topic-child {
+        font-size: smaller;
+        width: 262px;
     }
-
-    .email-topic {
-        font-size: small;
-        margin-left: 2rem;
-    }
-
-    .email-topic1 {
-        font-size: small;
-        margin-left: 2rem;
-    }
-
-    .your-topic {
-        margin-left: 0;
-    }
-
     .send-message-button {
-        font-size: small;
-        margin-left: 7rem;
-    }
-
-    .what-are-the,
-    .what-is-a1,
-    .how-do-i1,
-    .how-do-i,
-    .what-is-a,
-    .what-is-cryptocurrency {
-        font-size: small;
-        font-weight: bolder;
-        line-height: 1.5;
-        width: 350px;
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
+        font-size: medium;
     }
 }
