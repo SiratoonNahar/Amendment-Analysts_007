@@ -1,0 +1,361 @@
+
+/* navbar css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    background-color: #d2d2df;
+}
+nav img{
+    width: 20%;
+}
+nav>div.navcontainer{
+    background-color: #1A1A2E;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav button{
+    background-color: #00ffa0;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: none;
+    font-weight: bold;
+    padding-right: 20px;
+}
+#logo{
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.sign-up {
+    margin-right: 40px;
+}
+
+nav div#navlinks a{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 35px;
+}
+#menu{
+    padding-left: 20px;
+    display: none;
+}
+@media (width <= 750px){
+    #menu{
+        display: inline-block;
+    }
+    #navlinks{
+        display: none;
+    }
+    nav>div.navcontainer{
+        position: relative;
+    }
+    nav #menu:active~div#navlinks{
+        background-color: #2C2C54;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        line-height: 50px;
+    }
+
+
+
+
+
+
+}
+
+.container-1 {
+    background-color: #101428;
+        color: white;
+        max-width: 1300px;
+        margin: auto;
+        padding: 50px;
+        }
+
+.bitcoin-logo {
+    display: flex;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+        }
+.bitcoin-logo img {
+    margin-right: 10px;
+}
+
+.bitcoin-price {
+    display: flex;
+}
+
+.buy-sell button {
+    background-color: #00ffa24d;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: none;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: #00ffa214;
+    height: 50px;
+    border-radius: 11px;
+    flex-direction: row;
+    padding: 27px 34px 26px;
+    box-sizing: border-box;
+    font-family: Inter;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.75);
+    min-width: 250px;
+    z-index: 2;
+}
+
+.search {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.buy2 {
+    cursor: pointer;
+    border: 0;
+    margin-top: 20px;
+    width: 200px;
+    margin-left: 15px;
+    padding: 26px 45px;
+    background-color: #00ffa21d;
+    border-radius: 47px;
+    flex-direction: row;
+    white-space: nowrap;
+    z-index: 2;
+
+}
+
+.INR {
+    cursor: pointer;
+    border: 0;
+    margin-top: 20px;
+    width: 200px;
+    margin-left: 15px;
+    padding: 26px 45px;
+    background-color: #00ffa21d;
+    border-radius: 47px;
+    flex-direction: row;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.buy-bitcoin-2 {
+    cursor: pointer;
+    border: 0;
+    margin-top: 20px;
+    width: 200px;
+    margin-left: 15px;
+    padding: 26px 45px;
+    background-color: #00ffa21d;
+    border-radius: 47px;
+    flex-direction: row;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.current-price {
+    margin-top: 20px;
+}
+
+.about-section,
+.What-is-bitcoin,
+.How-bitcoin-works,
+.history,
+ .how-to-buy {
+    margin-top: 50px;
+    width: 1000px;
+    margin-left: 80px;
+}
+
+.how-to-buy {
+    margin-bottom: 100px;
+}
+
+.bitcoin-information p {
+    margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #bbbbbb;
+
+}
+
+.bitcoin-price>img {
+    margin-top: 20px;
+    width: 800px;
+    margin-right: 20px;
+    box-shadow: 3px 3px 3px #a9451d;
+    margin-left: 20px;
+}
+
+.buy-sell {
+    margin-left: 50px;
+}
+
+.buy-sell button:hover{
+    background-color: #00ffa0;
+    transition: 0.5s;
+
+}
+/* footer from here */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+/* *{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+} */
+.container{
+	max-width: 1170px;
+	margin:auto;
+	padding: 0 15px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #101428;
+    padding: 70px 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #00FFA0;
+	height: 2px;
+	box-sizing: border-box;
+	width: 90px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+}
+
+.img1 {
+    width: 160px;
+    margin-bottom: 10px;
+
+}
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 10px;
+    align-items: center;
+    
+}
+
+.social-media a {
+    margin: 0 10px;
+    color:#ffffff;
+}
+.copyright {
+    color: #ffffff50;
+    font-size:x-small;
+    text-align: center;
+}
+
+hr {
+  border: 1px solid #00ffa26f;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.bottom-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+@media(max-width: 574px){
+  .social-media {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-media a {
+    margin: 5px 0;
+  }
+  .bottom-c {
+    flex-direction: column;
+  }
+}
