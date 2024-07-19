@@ -48,9 +48,10 @@ body {
     align-items: center;
     /* background-color: #f4f4f4; */
 }
-/* nav{
-    background-color: #1A1A2E;
-} */
+nav{
+    position: sticky;
+    top: 0;
+}
 li{
     margin: 0 15px ;
 }
