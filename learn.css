@@ -1,22 +1,28 @@
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: px;
     padding: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
- 
+main{
+    padding: 20px;
+}
 body{
     background-color: #1A1A2E;
 }
 nav img{
     width: 20%;
 }
-nav>div.navcontainer{
-    background-color: #1A1A2E;
+nav{
+    background-color: red;
     max-width: 1300px;
     margin: auto;
+}
+nav>div.navcontainer{
+    background-color: #1A1A2E;
+    /* margin: auto; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,12 +30,12 @@ nav>div.navcontainer{
 nav button{
     background-color: #00ffa0;
     color: #000;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 100px;
     border: none;
     font-weight: 500;
     margin-right: 20px;
-    font-size: 15px;
+    font-size: 25px;
 }
 #logo{
     padding: 25px;
@@ -42,15 +48,57 @@ nav div#navlinks a{
     color: #fff;
     text-decoration: none;
     padding-left: 35px;
-    font-size: 15px;
+    font-size: 20px;
 }
 #menu{
     padding-left: 20px;
     display: none;
 }
+@media (min-width: 751px) and (max-width: 1050px) {
+    #logo span{
+        font-size: 25px;
+    }
+    nav{
+        background-color: red;
+        width: auto;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    nav button{
+        font-size: 15px;
+        padding: 5px 10px;
+        margin-right: 10px;
+    }
+    #menu{
+        display: inline-block;
+    }
+    #navlinks{
+        display: none;
+    }
+    nav>div.navcontainer{
+        position: relative;
+    }
+    nav #menu:active~div#navlinks{
+        background-color: #2C2C54;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        line-height: 50px;
+    }
+  }
 @media (width <= 750px){
     #logo span{
         font-size: 25px;
+    }
+    nav{
+        background-color: red;
+        width: auto;
+        margin: auto;
+        margin-bottom: 50px;
     }
     nav button{
         font-size: 15px;
@@ -138,7 +186,7 @@ main{
 }
 .news-2{
     display: flex;
-    margin: 30px 0px;
+    margin: 0px 0px;
     background-color: 5A75FF;
     padding: 20px;
     align-items: center;
@@ -153,6 +201,18 @@ div#news>p{
     font-weight: 400;
     font-size: 20px;
 }
+@media (min-width: 751px) and (max-width: 1050px) {
+    main{
+        margin: auto;
+    }
+    #newschild{
+        flex-wrap: wrap;
+    }
+    #news{
+        width: auto;
+        margin: auto;
+    }
+}
 @media screen and (max-width:750px){
     main{
         margin: auto;
@@ -162,6 +222,7 @@ div#news>p{
         width: auto;
         padding: 0px;
         align-items: normal;
+        margin: 10px 0px;
     }
     .news-2 div{
         margin-top: 20px;
@@ -169,6 +230,7 @@ div#news>p{
     }
     #news{
         width: auto;
+        margin: auto;
     }
     #newschild h4{
         font-size: 20px;
@@ -213,7 +275,32 @@ div#news>p{
     grid-column: span 2;
     height: 400px;
 }
-
+@media (min-width: 751px) and (max-width: 1050px) {
+    /* .container {
+        grid-template-columns: 2fr;
+        grid-template-rows: auto;
+    }
+    .item1, .item2, .item3, .item4, .item5 {
+        grid-column: span 2;
+    } */
+    #fst{
+        width: auto;
+        margin: auto;
+    }
+    .container h4{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .container p{
+        font-size: 10px;
+    }
+    section#fst>h4{
+        font-size: 15px;
+    }
+    section#snd>h4{
+        font-size: 15px;
+    }
+} 
 @media (max-width: 750px) {
     .container {
         grid-template-columns: 1fr;
@@ -221,6 +308,7 @@ div#news>p{
     }
     #fst{
         width: auto;
+        margin: auto;
     }
     .item1, .item2, .item3, .item4, .item5 {
         grid-column: span 1;
@@ -232,7 +320,7 @@ div#news>p{
     justify-content: space-between;
 }
 .container h4{
-    font-size: 24px;
+    font-size: 18px;
     color: #FFFFFF;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -264,7 +352,7 @@ div.card h4{
     margin-bottom: 30px;
 }
 #snd{
-    width: 1300px;
+    width: 1200px;
     margin: auto;
     /* background-color: yellow; */
 }
@@ -297,6 +385,7 @@ div.card h4{
 @media (max-width: 750px) {
     #snd{
         width: auto;
+        margin: auto;
     }
     #sndchild {
         width: auto;
@@ -306,16 +395,31 @@ div.card h4{
         margin-left: 50px;
     }
 }
-
+@media (min-width: 751px) and (max-width: 1050px) {
+    #snd{
+        width: auto;
+        margin: auto;
+    }
+    #sndchild {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* @media (max-width: 1300px) {
+    #snd{
+        width: auto;
+    }
+    
+} */
 #trdchild{
-    width: 100%;
+    width: 1200px;
+    margin: auto;
     background-color: #383a5e;
     /* background-color: red; */
 }
 #today{
     /* background-color: blue; */
     display: flex;
-    padding: 100px 160px;
+    padding: 80px 100px;
     margin-bottom: 60px;
     justify-content: space-between;
 }
@@ -354,10 +458,10 @@ div.card h4{
 }
 
 @media (min-width: 751px) and (max-width: 1050px) {
-    #today{
+    /* #today{
         padding: 30px;
         text-align: center;
-    }
+    } */
     #today h4{
         font-size: 45px;
         margin-bottom: 30px;
@@ -366,24 +470,53 @@ div.card h4{
         font-size: 20px;
         margin-bottom: 30px;
     }
-  }
-@media (max-width: 750px) {
     #trdchild{
-        width: 100%;
+        width: auto;
+        margin: auto;
+    }
+  }
+@media (max-width: 450px) {
+    #trdchild{
+        width: auto;
+        margin: auto;
     }
     #today{
-        flex-direction: column;
+        width: auto;
         padding: 10px;
-        text-align: center;
+    }
+    
+    #today h4{
+        font-size: 25px;
+        margin-bottom: 30px;
+        
+    } 
+     #today p{
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 750px) {
+    #trdchild{
+        width: auto;
+        margin: auto;
+    }
+    #today{
+        width: auto;
+        padding: 10px;
     }
     
     #today h4{
         font-size: 35px;
         margin-bottom: 30px;
+        
     } 
      #today p{
-        font-size: 10px;
+        font-size: 15px;
         margin-bottom: 30px;
+    }
+    #today img{
+        /* display: none; */
+        padding-top: 30px;
     }
 }
 #trd{
@@ -435,10 +568,11 @@ div.card h4{
 @media (max-width: 750px) {
     #trd{
         width: auto;
-
+        margin: auto;
     }
     .container-1 {
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
     }
     .res {
         width: 100%;
@@ -447,12 +581,20 @@ div.card h4{
 @media (min-width: 751px) and (max-width: 1050px) {
     #trd{
         width: auto;
-
+        margin: auto;
     }
-    .container-1 {
+    /* .container-1 {
         flex-direction: column;
+        flex-wrap: wrap;
     }
     .res {
         width: 100%;
+    } */
+}
+@media (max-width: 1300px) {
+    #trd{
+        width: auto;
+        margin: auto;
     }
-  }
+    
+}
