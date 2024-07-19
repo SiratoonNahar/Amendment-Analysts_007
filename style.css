@@ -253,7 +253,9 @@ button:hover {
     margin-top: 20px;
     border-radius: 10px;
 }
-
+.crypto-info-container img{
+    width: 50%;
+}
 .crypto-info-container h2 {
     font-size: 40px;
     margin-bottom: 20px;
@@ -262,6 +264,7 @@ button:hover {
 
 .crypto-info-para {
     /* width: 60%; */
+    margin-top: 10px;
     font-size: 20px;
     /* margin-left: 240px; */
     text-align: center;
@@ -332,14 +335,14 @@ button:hover {
     margin-bottom: 20px;
     color: #cccccc;
     text-align: center;
-    animation: fadeIn 1s ease; 
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    /* animation: fadeIn 1s ease;  */
+    /* transition: color 0.3s ease, text-shadow 0.3s ease; */
 }
 
-.info-card p:hover{
-    color: #f5c579; /* Change text color on hover */
+/* .info-card p:hover{
+    color: #f5c579; /* Change text color on hover 
     box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
-}
+} */
 
 @keyframes fadeIn {
     from {
