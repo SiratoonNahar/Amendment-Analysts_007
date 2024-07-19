@@ -4,17 +4,15 @@
 *{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
-}
-
-*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    width: auto;
+    height: auto;
+    background-color: #101428;
 }
- 
-body{
-    background-color: #d2d2df;
-}
+
+
 nav img{
     width: 20%;
 }
@@ -35,9 +33,11 @@ nav button{
     font-weight: bold;
     padding-right: 20px;
 }
-#logo{
+
+.logo{
     margin-left: 40px;
     padding: 10px;
+    background-color:#1A1A2E;
 }
 
 .sign-up {
@@ -48,10 +48,12 @@ nav div#navlinks a{
     color: #fff;
     text-decoration: none;
     padding-left: 35px;
+    background-color: #1A1A2E;
 }
 #menu{
     padding-left: 20px;
     display: none;
+    background-color: #1A1A2E
 }
 @media (width <= 750px){
     #menu{
@@ -74,11 +76,6 @@ nav div#navlinks a{
         left: 0;
         line-height: 50px;
     }
-
-
-
-
-
 
 }
 
@@ -209,11 +206,11 @@ nav div#navlinks a{
 }
 
 .bitcoin-price>img {
-    margin-top: 20px; 
-    width: 800px;
+    margin-top: 20px;
+    width: 700px;
     margin-right: 20px;
     box-shadow: 3px 3px 3px #a9451d;
-    margin-left: 20px;
+    margin-left: 75px;
 }
 
 .buy-sell {
@@ -222,21 +219,13 @@ nav div#navlinks a{
 
 .buy-sell button:hover{
     background-color: #00ffa0;
-    transition: 0.5s;
+    transition: 0.7s ease-out;
 
 }
+
+
 /* footer from here */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
-	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
-}
-/* *{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
-} */
 .container{
 	max-width: 1170px;
 	margin:auto;
