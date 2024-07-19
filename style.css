@@ -1,16 +1,47 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
- 
-body{
+
+body {
     background-color: #1A1A2E;
 }
-nav img{
+
+nav form button{
+    /* background-color: #00ffa0; */
+
+}
+
+li{
+    margin: 0 15px ;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #28a745;
+    border-radius: 10px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+}
+
+
+.nav img {
     width: 20%;
 }
-nav>div.navcontainer{
+
+nav>div.navcontainer {
     background-color: #1A1A2E;
     max-width: 1300px;
     margin: auto;
@@ -18,7 +49,8 @@ nav>div.navcontainer{
     align-items: center;
     justify-content: space-between;
 }
-nav button{
+
+nav button {
     background-color: #00ffa0;
     color: #000;
     padding: 10px 20px;
@@ -28,31 +60,36 @@ nav button{
     /* margin-right: 40px; */
 }
 
-#logo{
+#logo {
     margin-left: 40px;
     padding: 10px;
 }
 
-nav div#navlinks a{
+nav div#navlinks a {
     color: #fff;
     text-decoration: none;
     padding-left: 35px;
 }
-#menu{
+
+#menu {
     padding-left: 20px;
     display: none;
 }
-@media (width <= 750px){
-    #menu{
+
+@media (width <=750px) {
+    #menu {
         display: inline-block;
     }
-    #navlinks{
+
+    #navlinks {
         display: none;
     }
-    nav>div.navcontainer{
+
+    nav>div.navcontainer {
         position: relative;
     }
-    nav #menu:active~div#navlinks{
+
+    nav #menu:active~div#navlinks {
         background-color: #2C2C54;
         display: flex;
         flex-direction: column;
@@ -64,31 +101,36 @@ nav div#navlinks a{
         line-height: 50px;
     }
 }
+
 .line-div {
     align-self: stretch;
     box-sizing: border-box;
 }
+
 .line-div {
     height: 0.5px;
     position: relative;
     filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.65));
     border-top: 0.5px solid rgba(255, 255, 255, 0.35);
 }
-#headerh1 h1{
+
+#headerh1 h1 {
     margin-top: 120px;
     font-size: 60px;
     font-weight: 900;
     color: #00ffa0;
     line-height: 20px;
 }
-#headerh1 p{
+
+#headerh1 p {
     margin-top: 20px;
     font-size: 15px;
     font-weight: bold;
     color: #fff;
     line-height: 20px;
 }
-#headerh1{
+
+#headerh1 {
     width: auto;
     text-align: center;
     display: flex;
@@ -96,39 +138,44 @@ nav div#navlinks a{
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
-header{
+
+header {
     padding: 20px;
     background-color: #1A1A2E;
     margin: auto;
 }
-#headerh1 button{
+
+#headerh1 button {
     font-size: 15px;
 }
-#get{
+
+#get {
     margin-top: 60px;
     background-color: #00ffa0;
     color: #000;
-    padding: 20px 45px ;
+    padding: 20px 45px;
     border-radius: 100px;
     border: none;
     font-weight: bold;
     margin-right: 20px;
 }
-#start{
+
+#start {
     background-color: transparent;
     border: 3px solid #00ffa0;
     color: #00ffa0;
-    padding: 20px 45px ;
+    padding: 20px 45px;
     border-radius: 100px;
     font-weight: bold;
 }
+
 @media (max-width: 480px) {
-    #headerh1 h1{
+    #headerh1 h1 {
         font-size: 1.2em;
         line-height: 10px;
     }
 
-    #headerh1 p{
+    #headerh1 p {
         font-size: 0.9em;
     }
 
@@ -138,13 +185,15 @@ header{
     }
 }
 
- 
-.containers{
+
+.containers {
     /* border: 2px solid black;  */
-    max-width:1300px;
+    max-width: 1300px;
     margin: auto;
-   
+    width: fit-content;
+
 }
+
 .container {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -158,9 +207,16 @@ header{
 
 h1 {
     margin-bottom: 50px;
-    color: #fff; /* Ensure text color is white */
-    
+    color: #fff;
+    /* Ensure text color is white */
+
 }
+
+.navbar-brand img {
+    width: 15vw;
+    height: 10vh;
+}
+
 
 .grid-container {
     display: grid;
@@ -233,11 +289,11 @@ button:hover {
 
 .view-other {
     width: 400px;
-    background-color:#0e3739 ;
+    background-color: #0e3739;
     color: #19f0a3;
     padding: 15px 25px;
     border-radius: 30px;
-    border: 1px solid #19f0a3 ;
+    border: 1px solid #19f0a3;
     margin-top: 20px;
 }
 
@@ -255,9 +311,12 @@ button:hover {
     margin-top: 20px;
     border-radius: 10px;
 }
-.crypto-info-container img{
+
+.crypto-info-container img {
     width: 50%;
+    height: 400px;
 }
+
 .crypto-info-container h2 {
     font-size: 40px;
     margin-bottom: 20px;
@@ -278,7 +337,7 @@ button:hover {
     background-color: #000626;
     padding: 15px 25px;
     border-radius: 25px;
-    border: 1px solid ;
+    border: 1px solid;
     margin-top: 40px;
     margin-bottom: 20px;
     border: 1px solid #19f0a3;
@@ -299,7 +358,7 @@ button:hover {
 
 .info-item {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     background-color: #001f31;
     padding: 20px;
     border-radius: 30px;
@@ -307,9 +366,9 @@ button:hover {
     text-align: center;
     color: white;
     width: 200px;
-    height: 120px;
+    height: 140px;
     margin-left: 15px;
-    
+
 }
 
 .info-icon {
@@ -348,12 +407,13 @@ button:hover {
 
 @keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
 
 .info-card button {
     background-color: #00A676;
@@ -371,23 +431,25 @@ button:hover {
 
 
 @media (max-width: 1200px) {
+
     /* .grid-info-container {
         grid-template-columns: repeat(3, 1fr);
     } */
-    .info-item{
+    .info-item {
         /* width: auto; */
         width: 16vw;
         height: auto;
     }
 
-    .info-card{
+    .info-card {
         width: 18vw;
         font-size: xx-small;
     }
 
-    .info-card h3{
+    .info-card h3 {
         font-size: 12px;
     }
+
     .info-card button {
         font-size: larger;
     }
@@ -395,107 +457,116 @@ button:hover {
 
 
 @media (max-width: 768px) {
-    
- 
+
+
     .crypto-logo {
         margin-bottom: 5px;
     }
- 
+
     .view-other {
         width: 30vw;
     }
- 
+
     .crypto-info-container h2 {
         font-size: 16px;
     }
- 
+
     .crypto-info-container p {
         /* margin-bottom: 20px; */
         font-size: 12px;
     }
- 
+
     .grid-info-container {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
-    .info-item{
+
+    .info-item {
         margin-left: 0px;
         width: 35vw;
     }
- 
-    .info-card{
+
+    .info-card {
         grid-template-columns: repeat(2, 1fr);
         width: 35vw;
     }
-    
+
 }
- 
+
 @media (max-width: 480px) {
-    .container{
+    .container {
         overflow: hidden;
     }
+
     .grid-container {
         font-size: x-small;
         /* grid-template-columns: 1fr; */
     }
- 
-    h1{
+
+    h1 {
         font-size: medium;
     }
-    .action button{
+
+    .action button {
         padding: 5px;
     }
- 
+
     .view-other {
         width: auto;
     }
- 
+
     .crypto-info-container h2 {
         font-size: 18px;
     }
- 
+
     .crypto-info-container p {
         margin-bottom: 10px;
     }
- 
+
     .grid-info-container {
         grid-template-columns: 1fr;
     }
- 
-    .info-item{
-       
+
+    .info-item {
+
         width: 40vw;
         font-size: x-small;
         height: auto;
         margin: 0 auto;
     }
- 
-    .info-card{
+
+    .info-card {
         width: 60vw;
         margin: 0 auto;
     }
- 
-    .info-card h3{
+
+    .info-card h3 {
         font-size: 16px;
     }
- 
-    .info-card p{
+
+    .info-card p {
         font-size: small;
     }
- 
-    .info-card button{
+
+    .info-card button {
         font-size: xx-small;
         padding: 10px 10px;
     }
-    .info-icon{
+
+    .info-icon {
         font-size: 30px;
         margin-bottom: 15px;
     }
-    .fa-xl{
+
+    .fa-xl {
         font-size: 1.0em;
     }
+
+    .crypto-info-container img{
+        height: 200px;
+    }
 }
- 
+
 /* monty */
 .FAQS {
     max-width: 1300px;
@@ -509,16 +580,20 @@ button:hover {
     align-items: center;
     margin: 0;
 }
+
 .faqs-title {
     margin-top: 20px;
 }
+
 .follow-design-trends {
     font-size: larger;
 }
-.frequently-asked-questions{
+
+.frequently-asked-questions {
     margin-top: 50px;
     text-align: justify;
 }
+
 .cryptoAction {
     max-width: 1300px;
     margin: auto;
@@ -530,28 +605,33 @@ button:hover {
     align-items: center;
     margin: 0;
 }
+
 .question-container {
     display: flex;
     gap: 6rem;
     margin: 50px 224px 50px 224px;
 }
-.FaqPart1{
+
+.FaqPart1 {
     margin-left: 150px;
     justify-content: flex-start;
 }
-.FaqPart2{
+
+.FaqPart2 {
     margin-right: 100px;
     justify-content: flex-start;
 }
-.what-is-cryptocurrency{
+
+.what-is-cryptocurrency {
     display: flex;
     width: 282px;
     height: 29px;
     text-align: left;
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: bolder;
     margin-top: 30px;
 }
+
 .cryptocurrency-is-a {
     display: flex;
     width: 590px;
@@ -559,104 +639,115 @@ button:hover {
     text-align: left;
     margin-top: 60px;
     line-height: 35px;
-    font-size:x-large;
+    font-size: x-large;
     margin-bottom: 70px;
 }
+
 .what-is-a {
     display: flex;
     width: 249px;
     height: 29px;
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: bolder;
     text-align: left;
     margin-top: 60px;
 }
+
 .a-blockchain-is {
     display: flex;
     width: 590px;
     height: 48px;
     text-align: left;
     margin-top: 60px;
-    font-size:x-large;
+    font-size: x-large;
     line-height: 35px;
     margin-bottom: 40px;
 }
+
 .how-do-i {
     display: flex;
     width: 376px;
     height: 29px;
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: bolder;
     text-align: left;
     margin-top: 60px;
 }
+
 .choose-a-reliable {
     display: flex;
     width: 590px;
     height: 48px;
     text-align: left;
     margin-top: 60px;
-    font-size:x-large;
+    font-size: x-large;
     line-height: 35px;
     margin-bottom: 40px;
 }
+
 .how-do-i1 {
     display: flex;
     width: 494px;
     height: 29px;
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: bolder;
     text-align: left;
     margin-top: 30px;
 }
+
 .use-strong-passwords {
     display: flex;
     width: 590px;
     height: 48px;
     text-align: left;
     margin-top: 60px;
-    font-size:x-large;
+    font-size: x-large;
     line-height: 35px;
     margin-bottom: 70px;
 }
+
 .what-is-a1 {
     display: flex;
     width: 483px;
     height: 29px;
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: bolder;
     text-align: left;
     margin-top: 60px;
 }
+
 .a-cryptocurrency-wallet {
     display: flex;
     width: 590px;
     height: 48px;
     text-align: left;
     margin-top: 60px;
-    font-size:x-large;
+    font-size: x-large;
     line-height: 35px;
     margin-bottom: 40px;
 }
+
 .what-are-the {
     display: flex;
     width: 520px;
     height: 29px;
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: bolder;
     margin-top: 60px;
     text-align: left;
 }
+
 .popular-cryptocurrencies-inclu {
     display: flex;
     width: 590px;
     height: 48px;
     text-align: left;
-    font-size:x-large;
+    font-size: x-large;
     margin-top: 60px;
     line-height: 35px;
     margin-bottom: 40px;
 }
+
 .cryptoAction {
     max-width: 1300px;
     height: auto;
@@ -669,26 +760,31 @@ button:hover {
     align-items: center;
     margin: 0;
 }
-.contact-form{
+
+.contact-form {
     margin-left: 20%;
     padding: 30px;
 }
+
 .email-address {
     position: relative;
     z-index: 2;
-  }
+}
+
 .email-topic,
 .topic-input {
-  align-self: stretch;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .email-topic {
     flex-direction: column;
     padding: 0 0 17px;
     gap: 15px;
 }
+
 .topic-input {
     width: 100%;
     border: 0;
@@ -705,47 +801,54 @@ button:hover {
     min-width: 250px;
     z-index: 2;
 }
+
 .your-topic {
     position: relative;
     display: inline-block;
     min-width: 120px;
     z-index: 2;
 }
+
 .email-topic1,
 .email-topic {
-    font-size:xx-large;
+    font-size: xx-large;
 }
+
 .send-message-button {
     margin-top: 20px;
-    font-size:xx-large;
+    font-size: xx-large;
 }
+
 .email-topic-child,
 .email-topic1 {
-  align-self: stretch;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .email-topic-child {
-  width: 100%;
-  border: 0;
-  outline: 0;
-  background-color: rgba(255, 255, 255, 0.1);
-  height: 50px;
-  border-radius: 11px;
-  flex-direction: row;
-  padding: 27px 34px 26px;
-  box-sizing: border-box;
-  font-family: Inter;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.75);
-  min-width: 250px;
-  z-index: 2;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 50px;
+    border-radius: 11px;
+    flex-direction: row;
+    padding: 27px 34px 26px;
+    box-sizing: border-box;
+    font-family: Inter;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.75);
+    min-width: 250px;
+    z-index: 2;
 }
+
 .email-topic1 {
-  flex-direction: column;
-  gap: 15px;
+    flex-direction: column;
+    gap: 15px;
 }
+
 .send-message-button-child {
     margin-top: 20px;
     height: 81px;
@@ -755,50 +858,58 @@ button:hover {
     background-color: #00ffa0;
     display: none;
 }
+
 .send-message-button:hover {
     background-color: #00cc6e;
-  }
+}
+
 .contact-form,
 .send-message-button {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .send-message-button {
-  cursor: pointer;
-  border: 0;
-  padding: 15px 45px;
-  background-color: #00ffa21d;
-  border-radius: 47px;
-  flex-direction: row;
-  white-space: nowrap;
-  z-index: 2;
+    cursor: pointer;
+    border: 0;
+    padding: 15px 45px;
+    background-color: #00ffa21d;
+    border-radius: 47px;
+    flex-direction: row;
+    white-space: nowrap;
+    z-index: 2;
 }
+
 .send-message-button:hover {
-  background-color: #00cc6d4a;
+    background-color: #00cc6d4a;
 }
+
 .contact-form {
-  width: 500px;
-  flex-direction: column;
-  gap: 42px;
-  min-width: 500px;
-  max-width: 100%;
-  font-size: 24px;
+    width: 500px;
+    flex-direction: column;
+    gap: 42px;
+    min-width: 500px;
+    max-width: 100%;
+    font-size: 24px;
 }
-.get-it-on{
+
+.get-it-on {
     margin-top: 10px;
     font-size: 40px;
 }
+
 .pt-1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 50px;
 }
+
 .provide-easy-access {
     margin-top: 20px;
     font-size: 25px;
-    text-align:center
+    text-align: center
 }
 
 /* responsive by mahantesh */
@@ -809,9 +920,12 @@ button:hover {
         gap: 3rem;
         margin: 20px;
     }
-    .FaqPart1, .FaqPart2 {
+
+    .FaqPart1,
+    .FaqPart2 {
         margin: 0;
     }
+
     .cryptoAction {
         flex-direction: column;
     }
@@ -821,10 +935,12 @@ button:hover {
     .question-container {
         margin: 10px;
     }
+
     .frequently-asked-questions {
         text-align: center;
         margin: 20px;
     }
+
     .cryptocurrency-is-a,
     .a-blockchain-is,
     .choose-a-reliable,
@@ -834,14 +950,17 @@ button:hover {
         width: auto;
         text-align: center;
     }
+
     .contact-form {
         width: auto;
         margin: 10px;
     }
+
     .email-topic,
     .email-topic1 {
         font-size: large;
     }
+
     .send-message-button {
         font-size: large;
     }
@@ -854,6 +973,7 @@ button:hover {
         margin-left: 20px;
         text-align: left;
     }
+
     .cryptocurrency-is-a,
     .a-blockchain-is,
     .choose-a-reliable,
@@ -865,21 +985,26 @@ button:hover {
         margin-top: 0.5rem;
         margin-bottom: 1.5rem;
     }
+
     .email-topic {
         font-size: small;
         margin-left: 2rem;
     }
-    .email-topic1{
+
+    .email-topic1 {
         font-size: small;
         margin-left: 2rem;
     }
+
     .your-topic {
         margin-left: 0;
     }
+
     .send-message-button {
         font-size: small;
         margin-left: 7rem;
     }
+
     .what-are-the,
     .what-is-a1,
     .how-do-i1,
