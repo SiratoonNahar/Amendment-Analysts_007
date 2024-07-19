@@ -25,10 +25,12 @@ nav button{
     border-radius: 100px;
     border: none;
     font-weight: bold;
-    padding-right: 20px;
+    /* margin-right: 40px; */
 }
+
 #logo{
-    padding: 25px;
+    margin-left: 40px;
+    padding: 10px;
 }
 
 nav div#navlinks a{
@@ -534,7 +536,7 @@ button:hover {
     margin: 50px 224px 50px 224px;
 }
 .FaqPart1{
-    margin-left: 100px;
+    margin-left: 150px;
     justify-content: flex-start;
 }
 .FaqPart2{

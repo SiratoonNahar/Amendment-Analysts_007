@@ -6,13 +6,13 @@
 
 body {
     transition: background-color 0.5s, color 0.5s;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000626;
+    color: white;
 }
  
 body.dark-theme {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: white;
+    color: #000626;
 }
  
 .theme-toggle {
@@ -39,9 +39,6 @@ body.dark-theme .theme-toggle .moon {
     color: #ffffff;
 }
  
-
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -53,7 +50,7 @@ body {
 }
  
 header {
-    background-color: #4CAF50;
+    background-color: #2b872df6;
     color: white;
     padding: 1rem;
     width: 100%;
