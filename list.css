@@ -6,13 +6,13 @@
 
 body {
     transition: background-color 0.5s, color 0.5s;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000626;
+    color: white;
 }
  
 body.dark-theme {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: white;
+    color: #000626;
 }
  
 .theme-toggle {
@@ -39,9 +39,6 @@ body.dark-theme .theme-toggle .moon {
     color: #ffffff;
 }
  
-
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -51,9 +48,40 @@ body {
     align-items: center;
     /* background-color: #f4f4f4; */
 }
+nav{
+    position: sticky;
+    top: 0;
+}
+li{
+    margin: 0 15px ;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #28a745;
+    border-radius: 10px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+}
+
+
+.nav img {
+    width: 20%;
+}
  
 header {
-    background-color: #4CAF50;
+    /* background-color: #2b872df6; */
     color: white;
     padding: 1rem;
     width: 100%;
