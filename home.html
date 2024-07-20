@@ -32,16 +32,16 @@
             </ul>
 
             <li class="nav-link"><a href="./index.html">Home</a></li>
-            <li class="nav-link"><a href="./aboutus.html">Trade</a></li>
-            <li class="nav-link"><a href="./contact.html">Learn</a></li>
-            <li class="nav-link"><a href="./contact.html">Markets</a></li>
+            <li class="nav-link"><a href="./trade1.html">Trade</a></li>
+            <li class="nav-link"><a href="./learn.html">Learn</a></li>
+            <li class="nav-link"><a href="./list.html">Markets</a></li>
             <li class="nav-link"><button class="signup">Sign Up</button></li>
-            <li class="nav-link"><button class="signin">Sign In</button></li>
+            <li class="nav-link"><button class="signin" onclick="window.open('sign_in.html')">Sign In</button></li>
             <li class="sociallinkContainer">
                 <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
                 <img class="sociallink" src="./img/twitter-icon-white.svg" alt="">
                 <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
-                <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+                <a href="#"><img class="sociallink" src="./img/whatsapp-icon-white.svg" alt=""></a>
             </li>
         </ul>
         <div id="barContainer">
@@ -69,103 +69,7 @@
             <img src="./img/hero-image.png" alt="">
         </div>
     </section>
-
-    <!-- Carousel -->
-    <!-- <section>
-        <div class="carouselContainer">
-            <div class="eachCarousel eachCarouselBorder">
-                <img src="./img/bitcoin-icon.png" alt="">
-                <article class="carouselDesc">
-                    <h1 class="carouselTitle">Bitcoin</h1>
-                    <p class="carouselPara">Bitcoin is an innovative payment network</p>
-                    <div class="carouselPrice">
-                        <h3>$34,000</h3>
-                        <span class="rect"></span>
-                        <h3 class="carouselDiscount">15%</h3>
-                    </div>
-                    <button class="btn carouselBtn">Buy & Trade</button>
-                </article>
-            </div>
-
-            <div class="eachCarousel">
-                <img src="./img/ethereum-icon.png" alt="">
-                <article class="carouselDesc">
-                    <h1 class="carouselTitle">Ethereum</h1>
-                    <p class="carouselPara">Ethereum is open-source blockchain currency</p>
-                    <div class="carouselPrice">
-                        <h3>$25,600</h3>
-                        <span class="rect"></span>
-                        <h3 class="carouselDiscount">9%</h3>
-                    </div>
-                    <button class="btn carouselBtn">Buy & Trade</button>
-                </article>
-            </div>
-
-            <div class="eachCarousel">
-                <img src="./img/tether-icon.png" alt="">
-                <article class="carouselDesc">
-                    <h1 class="carouselTitle">Tether</h1>
-                    <p class="carouselPara">Tether is a stable coin cryptocurrency</p>
-                    <div class="carouselPrice">
-                        <h3>$7,000</h3>
-                        <span class="rect"></span>
-                        <h3 class="carouselDiscount">4%</h3>
-                    </div>
-                    <button class="btn carouselBtn">Buy & Trade</button>
-                </article>
-            </div>
-
-            <div class="eachCarousel">
-                <img src="./img/bitcoin-icon.png" alt="">
-                <article class="carouselDesc">
-                    <h1 class="carouselTitle">Bitcoin</h1>
-                    <p class="carouselPara">Bitcoin is an innovative payment network</p>
-                    <div class="carouselPrice">
-                        <h3>$34,000</h3>
-                        <span class="rect"></span>
-                        <h3 class="carouselDiscount">15%</h3>
-                    </div>
-                    <button class="btn carouselBtn">Buy & Trade</button>
-                </article>
-            </div>
-
-            <div class="eachCarousel">
-                <img src="./img/ethereum-icon.png" alt="">
-                <article class="carouselDesc">
-                    <h1 class="carouselTitle">Ethereum</h1>
-                    <p class="carouselPara">Ethereum is open-source blockchain currency</p>
-                    <div class="carouselPrice">
-                        <h3>$25,600</h3>
-                        <span class="rect"></span>
-                        <h3 class="carouselDiscount">9%</h3>
-                    </div>
-                    <button class="btn carouselBtn">Buy & Trade</button>
-                </article>
-            </div>
-
-            <div class="eachCarousel">
-                <img src="./img/tether-icon.png" alt="">
-                <article class="carouselDesc">
-                    <h1 class="carouselTitle">Tether</h1>
-                    <p class="carouselPara">Tether is a stable coin cryptocurrency</p>
-                    <div class="carouselPrice">
-                        <h3>$7,000</h3>
-                        <span class="rect"></span>
-                        <h3 class="carouselDiscount">4%</h3>
-                    </div>
-                    <button class="btn carouselBtn">Buy & Trade</button>
-                </article>
-            </div>
-        </div>
-        <div class="carouselIndicator">
-            <div class="indicator activeIndicator" onclick="slideCarousel(0)"></div>
-            <div class="indicator" onclick="slideCarousel(1)"></div>
-            <div class="indicator" onclick="slideCarousel(2)"></div>
-            <div class="indicator" onclick="slideCarousel(3)"></div>
-            <div class="indicator" onclick="slideCarousel(4)"></div>
-            <div class="indicator" onclick="slideCarousel(5)"></div>
-        </div>
-    </section> -->
+    
 
     <!-- Processes -->
     <section class="gridSection">
@@ -288,7 +192,7 @@
                 But with prouple, you can mine bitcoin from your own phone!
                 You no longer have to worry about costly transactions.
             </p>
-            <button class="btn">Explore Now</button>
+            <button class="btn" onclick="window.open('list.html')">Explore Now</button>
         </div>
 
         <div class="sectionPic dashboardPic">
@@ -385,7 +289,7 @@
                     <a
                         href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F"><img
                             class="sociallink" src="./img/inkedin-icon-white.svg" alt=""></a>
-                    <a href="https://wa.me/+911234567890"><img class="sociallink" src="./img/whatsapp-icon-white.svg"
+                    <a href="https://wa.me/+91112489987"><img class="sociallink" src="./img/whatsapp-icon-white.svg"
                             alt=""></a>
                 </div>
             </div>
