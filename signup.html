@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sign_In</title>
+  <title>Sign_Up</title>
   <link rel="stylesheet" href="signup.css">
 </head>
 
@@ -48,25 +48,29 @@
     <div class="signin">
       <div class="content">
         <h2>Sign Up</h2>
-        <div class="form">
-          <div class="inputBox">
-            <input type="text" required> <i>Full Name</i>
+        <form class="content" action="index.html">
+          <div class="form">
+            <div class="inputBox">
+              <input type="text" required> <i>Full Name</i>
+            </div>
+            <div class="inputBox">
+              <input type="email" required> <i>Email</i>
+            </div>
+            <div class="inputBox">
+              <input type="password" required> <i>Password</i>
+            </div>
+            <div class="inputBox">
+              <input type="password" required> <i>Confirm Password</i>
+            </div>
+            <div class="links"> <a href="#">Forgot Password</a> <a href="signup.html">Signup</a>
+            </div>
+            <div class="inputBox">
+              <input type="submit" value="SignUp">
+            </div>
           </div>
-          <div class="inputBox">
-            <input type="email" required> <i>Email</i>
-          </div>
-          <div class="inputBox">
-            <input type="password" required> <i>Password</i>
-          </div>
-          <div class="inputBox">
-            <input type="password" required> <i>Confirm Password</i>
-          </div>
-          <div class="links"> <a href="#">Forgot Password</a> <a href="signup.html">Signup</a>
-          </div>
-          <div class="inputBox">
-            <input type="submit" onclick="window.open('index.html')" value="SignUp">
-          </div>
-        </div>
+
+        </form>
+        
       </div>
     </div>
   </section>
