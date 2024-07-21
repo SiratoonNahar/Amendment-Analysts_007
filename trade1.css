@@ -4,17 +4,15 @@
 *{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
-}
-
-*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    width: auto;
+    height: auto;
+    background-color: #101428;
 }
- 
-body{
-    background-color: #d2d2df;
-}
+
+
 nav img{
     width: 20%;
 }
@@ -35,9 +33,11 @@ nav button{
     font-weight: bold;
     padding-right: 20px;
 }
-#logo{
+
+.logo{
     margin-left: 40px;
     padding: 10px;
+    background-color:#1A1A2E;
 }
 
 .sign-up {
@@ -48,10 +48,12 @@ nav div#navlinks a{
     color: #fff;
     text-decoration: none;
     padding-left: 35px;
+    background-color: #1A1A2E;
 }
 #menu{
     padding-left: 20px;
     display: none;
+    background-color: #1A1A2E
 }
 @media (width <= 750px){
     #menu{
@@ -75,20 +77,24 @@ nav div#navlinks a{
         line-height: 50px;
     }
 
-
-
-
-
-
 }
 
 .container-1 {
     background-color: #101428;
-        color: white;
-        max-width: 1300px;
-        margin: auto;
-        padding: 50px;
-        }
+    color: white;
+    max-width: 1300px;
+    margin: auto;
+    padding: 50px;
+}
+.buy-sell {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.buy, .sell, .swap{
+    width: 30%;
+}
 
 .bitcoin-logo {
     display: flex;
@@ -105,7 +111,7 @@ nav div#navlinks a{
 }
 
 .buy-sell button {
-    background-color: #00ffa24d;
+    background-color: #00ffa0;
     color: #000;
     padding: 10px 20px;
     border-radius: 100px;
@@ -114,11 +120,15 @@ nav div#navlinks a{
     padding-right: 20px;
 }
 
+.buy2, .INR {
+    width: 100%;
+}
+
 .input {
     width: 100%;
     border: 0;
     outline: 0;
-    background-color: #00ffa214;
+    background-color: #00ffa0;
     height: 50px;
     border-radius: 11px;
     flex-direction: row;
@@ -126,7 +136,7 @@ nav div#navlinks a{
     box-sizing: border-box;
     font-family: Inter;
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.75);
+    color: black;
     min-width: 250px;
     z-index: 2;
 }
@@ -146,7 +156,7 @@ nav div#navlinks a{
     width: 200px;
     margin-left: 15px;
     padding: 26px 45px;
-    background-color: #00ffa21d;
+    background-color: #00ffa0;
     border-radius: 47px;
     flex-direction: row;
     white-space: nowrap;
@@ -172,14 +182,13 @@ nav div#navlinks a{
     cursor: pointer;
     border: 0;
     margin-top: 20px;
-    width: 200px;
+    width: 100%;
     margin-left: 15px;
     padding: 26px 45px;
-    background-color: #00ffa21d;
+    background-color: #00ffa0;
     border-radius: 47px;
     flex-direction: row;
-    white-space: nowrap;
-    z-index: 2;
+    text-align: center;
 }
 
 .current-price {
@@ -192,7 +201,7 @@ nav div#navlinks a{
 .history,
  .how-to-buy {
     margin-top: 50px;
-    width: 1000px;
+    max-width: 100%;
     margin-left: 80px;
 }
 
@@ -209,9 +218,8 @@ nav div#navlinks a{
 }
 
 .bitcoin-price>img {
-    margin-top: 20px;
-    width: 800px;
-    margin-right: 20px;
+    margin: 20px;
+    width: 60%;
     box-shadow: 3px 3px 3px #a9451d;
     margin-left: 20px;
 }
@@ -221,22 +229,75 @@ nav div#navlinks a{
 }
 
 .buy-sell button:hover{
-    background-color: #00ffa0;
-    transition: 0.5s;
+    background-color: #07422c;
+    transition: 0.2s ease-out;
 
 }
+@media (max-width: 1024px) {
+    .bitcoin-price {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .buy2, .INR {
+        width: 50%;
+    }
+    .buy-bitcoin-2, .search{
+        width: 50%;
+    }
+
+    .bitcoin-price > img {
+        margin: 0;
+        width: 100%;
+    }
+    .buy-sell{
+        margin-top: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .bitcoin-logo {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        align-items: center;
+    }
+    .buy-sell{
+        margin-top: 40px;
+        margin-left: auto;
+    }
+    .buy2, .INR {
+        width: 70%;
+    }
+    .buy-bitcoin-2, .search{
+        width: 70%;
+    }
+
+    .bitcoin-logo img {
+        margin-right: 0;
+    }
+
+    .about-section,
+    .What-is-bitcoin,
+    .How-bitcoin-works,
+    .history,
+    .how-to-buy {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Buy-sell-swap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Buy-sell-swap button{
+        margin: 3px;
+        width: 40%;
+    }
+}
+
+
 /* footer from here */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
-	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
-}
-/* *{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
-} */
 .container{
 	max-width: 1170px;
 	margin:auto;
