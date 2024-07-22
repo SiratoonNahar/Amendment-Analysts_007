@@ -5,319 +5,328 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./commonStyle.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-            <!-- <img src="image.png" class="d-inline-block align-top" alt="Logo"> -->
-            <div>
-                <span style="color: #00ffa0; font-size:30px;">Coin</span>
-                <span style="color: #fff; font-size:45px;">Echo</span>
-            </div>
-        </a>
-        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <div class="mx-auto d-flex align-items-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" style="color: white;">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Trade</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" style="color: white;">Market</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Learn</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Support</a>
-                    </li>
-                </ul>
-            </div>
-            <form class="form-inline ml-2">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="button" style="color: #ffffff;">Sign Up</button>
-                <button class="btn btn-outline-primary my-2 my-sm-0 ml-2" type="button" style="color: #ffffff;">Sign In</button>
-            </form>
-        </div>
-    </nav>
-
-    <!-- <nav>
-        <div class="navcontainer">
-            <span id="menu"><i class="fa-solid fa-ellipsis-vertical" style="color: #ffffff;"></i></span>
-            <div id="logo">
-                <span style="color: #00ffa0; font-size:30px ;">Coin</span>
-                <span style="color: #fff; font-size:45px;">Echo</span>
-            </div>
-            <div id="navlinks">
-                <a href="#">Home</a>
-                <a href="#">Trade</a>
-                <a href="#">Market</a>
-                <a href="#">Learn</a>
-                <a href="#">Support</a>
-            </div>
-            <button>Sign In</button>
-            <button>Sign Up</button>
-            
-        </div>
-    </nav> -->
+    <!-- Header -->
     <header>
-        <div id="headerh1">
-            <h1>Secure & Intuitive <br /> <br /><br /> <br /> Crypto Trading</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos repellat iusto sequi iste est voluptatem
-                voluptate exercitationem earum nam itaque?</p>
-            <div id="headbutton">
-                <button id="get">Get Started</button>
-                <button id="start">Start Trading</button>
-            </div>
+        <div id="logo">
+            <a href="./index.html">
+                <div>
+                    <span style="color: #00ffa0; font-size:30px;">Coin</span>
+                    <span style="color: #fff; font-size:45px;">Echo</span>
+                </div>
+            </a>
+        </div>
+        <ul class="nav" id="nav">
+            <ul class="navLogo">
+                <a href="./index.html">
+                    <div>
+                        <span style="color: #00ffa0; font-size:30px;">Coin</span>
+                        <span style="color: #fff; font-size:45px;">Echo</span>
+                    </div>
+                </a>
+            </ul>
 
+            <li class="nav-link"><a href="./index.html">Home</a></li>
+            <li class="nav-link"><a href="./trade1.html">Trade</a></li>
+            <li class="nav-link"><a href="./list.html">Market</a></li>
+            <li class="nav-link"><a href="./learn.html">Learn</a></li>
+            
+            <li class="nav-link"><button class="signup" onclick="window.open('signup.html')">Sign Up</button></li>
+            <li class="nav-link"><button class="signin" onclick="window.open('sign_in.html')">Sign In</button></li>
+            <li class="sociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/twitter-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                <a href="#"><img class="sociallink" src="./img/whatsapp-icon-white.svg" alt=""></a>
+            </li>
+        </ul>
+        <div id="barContainer">
+            <i id="bar" class="fa-solid fa-bars"></i>
         </div>
     </header>
 
-    <main>
-        <div class="containers">
-            <div class="container">
-                <h1>Crypto Market Trade And Metrics</h1>
-                <div class="grid-container">
-                    <div class="grid-header">Crypto</div>
-                    <div class="grid-header">Change</div>
-                    <div class="grid-header">Price</div>
-                    <div class="grid-header">Chart</div>
-                    <div class="grid-header">Action</div>
+    <!-- Hero page -->
+    <section class="hero gridSection">
+        <div class="sectionDesc">
+            <h1 class="headline">
+                Most popular way to trade <span class="cryptoText">CRYPTO</span>.
+            </h1>
+            <p class="sub-headline">
+                You can see a record of all your transactions
+                anytime you want and never have to worry about
+                someone erasing or stealing your money!
+            </p>
+            <div class="btnContainer">
+                <button class="btn btn1">Contact Now</button>
+                <button class="btn btn2" onclick="window.open('https://youtu.be/Ro3G8WZY4eQ?si=Rilr5DmltNav9QOe')">play video <i class="fa-solid fa-play"></i></button>
+            </div>
+        </div>
+        <div class="sectionPic bouncepic" id="sectionPic">
+            <img src="./img/hero-image.png" alt="">
+        </div>
+    </section>
+    
 
-                    <div class="grid-item crypto">
-                        <img src="https://shorturl.at/QlFP0" alt="Bitcoin" class="crypto-logo">
-                        <span>Bitcoin</span>
-                    </div>
-                    <div class="grid-item change positive">+14.04%</div>
-                    <div class="grid-item price">49,645 Inr</div>
-                    <div class="grid-item chart">Chart</div>
-                    <div class="grid-item action"><button><a href="trade1.html"
-                                style="text-decoration: none; color: #00ffa0;">Trade</a></button></div>
-
-                    <div class="grid-item crypto">
-                        <img src="https://shorturl.at/e7ldz" alt="Ethereum" class="crypto-logo">
-                        <span>Ethereum</span>
-                    </div>
-                    <div class="grid-item change positive">+43.04%</div>
-                    <div class="grid-item price">36,675 Inr</div>
-                    <div class="grid-item chart">Chart</div>
-                    <div class="grid-item action"><button><a href="etherium.html"
-                        style="text-decoration: none; color: #00ffa0;">Trade</a></button></div>
-
-                    <div class="grid-item crypto">
-                        <img src="https://seeklogo.com/images/S/solana-sol-logo-12828AD23D-seeklogo.com.png"
-                            alt="Solana" class="crypto-logo">
-                        <span>Solana</span>
-                    </div>
-                    <div class="grid-item change negative">-14.23%</div>
-                    <div class="grid-item price">1,456 Inr</div>
-                    <div class="grid-item chart">Chart</div>
-                    <div class="grid-item action"><button>Trade</button></div>
-
-                    <div class="grid-item crypto">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRx5-sqtdTC0RTsGZHWlkC0rDkPopHIh3RDr_L1NxuSsYns8j8"
-                            alt="Doge" class="crypto-logo">
-                        <span>Doge</span>
-                    </div>
-                    <div class="grid-item change positive">+17.06%</div>
-                    <div class="grid-item price">41,645 Inr</div>
-                    <div class="grid-item chart">Chart</div>
-                    <div class="grid-item action"><button>Trade</button></div>
+    <!-- Processes -->
+    <section class="gridSection">
+        <div class="sectionDesc processessDesc">
+            <h1 class="sectionHeader">Chain Process</h1>
+            <p class="sectionPara">We do not charge any fees and we do not require
+                any registration. You keep your privacy and your
+                coins.
+            </p>
+            <div class="eachProcesses">
+                <img src="./img/handshake-icon-white-line.svg" alt="handshake">
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Trading</h1>
+                    <p>
+                        The act of speculating on cryptocurrency price movements
+                        via a CFD trading account, or buying and selling.
+                    </p>
                 </div>
-                <button onclick="window.open('list.html','_blank')" class="view-other">View Other Crypto</button>
-
-                <div class="crypto-info-container">
-                    <button class="learn-crypto-btn">Learn Crypto</button>
-                    <h2>Let's Know How Crypto Works</h2>
-
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://media.licdn.com/dms/image/C5612AQEm3I1yf54e-w/article-cover_image-shrink_600_2000/0/1631798560560?e=2147483647&v=beta&t=DpvGVd6JuOsb2UAxaurYoffxk1WuFoS5AYvgWS8jtDY"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://www.tdk.com/en/tech-mag/sites/default/files/2024-03/Blockchain-Cryptocurrency.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://images.moneycontrol.com/static-mcnews/2022/03/shutterstock_1446648077.jpg?impolicy=website&width=1600&height=900"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <p class="crypto-info-para">Cryptocurrency operates on a decentralized network using blockchain
-                        technology, ensuring secure and transparent transactions. It relies on cryptographic principles
-                        for verifying and recording transactions on a public ledger. Bitcoin, the first cryptocurrency,
-                        introduced the concept in 2009, followed by numerous others like Ethereum and Litecoin.</p>
-                    <div class="grid-info-container">
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fa-solid fa-graduation-cap fa-xl"></i></div>
-                            <span>Learn Crypto</span>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fa-solid fa-sack-dollar fa-xl"></i></div>
-                            <span>Learn Earn</span>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fa-solid fa-chart-line fa-xl"></i></div>
-                            <span>How To Trade</span>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fa-regular fa-address-card fa-xl"></i></div>
-                            <span>Build Portfolio</span>
-                        </div>
-                        <div class="info-card">
-                            <h3>Let's learn How crypto Currency Work?</h3>
-                            <p>Cryptocurrencies utilize blockchain for secure, transparent transaction recording and
-                                verification....</p>
-                            <button>Learn More</button>
-                        </div>
-                        <div class="info-card">
-                            <h3>Let's explore the basic mechanism behind cryptocurrencies?</h3>
-                            <p>Cryptocurrencies use decentralized blockchain networks...</p>
-                            <button>Learn More</button>
-                        </div>
-                        <div class="info-card">
-                            <h3>Let's dive into the process behind cryptocurrency transactions. How do they work?</h3>
-                            <p>Transactions are broadcasted to a network of nodes...</p>
-                            <button>Learn More</button>
-                        </div>
-                        <div class="info-card">
-                            <h3>How do cryptocurrencies ensure secure and transparent transactions?</h3>
-                            <p>Cryptocurrencies ensure secure and transparent transactions where...
-                            </p>
-                            <button>Learn More</button>
-                        </div>
-                    </div>
+            </div>
+            <div class="eachProcesses">
+                <img src="./img/cart-icon-white-line.svg" alt="handshake">
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Buying</h1>
+                    <p>
+                        Best cryptocurrency exchanges currently purchase Bitcoin,
+                        Ethereum, and Litecoin other coins and tokens on the platform.
+                    </p>
                 </div>
             </div>
         </div>
-    </main>
-    <div class="containers">
-        <section class="FAQS">
-            <div class="faqs-image"></div>
-            <button class="faqs-title">
-                <div class="faqs1">FAQs</div>
-            </button>
-            <h1 class="frequently-asked-questions">
-                Frequently Asked Questions
-            </h1>
-            <div class="follow-design-trends">
-                Follow design trends and continually update your skills by
-                learning new tools and techniques.
-            </div>
-            <div class="question-container">
-                <div class="FaqPart1">
-                    <div class="what-is-cryptocurrency">
-                        What is cryptocurrency?
-                    </div>
-                    <div class="cryptocurrency-is-a">
-                        Cryptocurrency is a digital currency secured by cryptography
-                        and operating on decentralized networks.
-                    </div>
-                    <hr>
-                    <div class="what-is-a">What is a blockchain?</div>
-                    <div class="a-blockchain-is">
-                        Blockchain is an encrypted public ledger through which digital assets can be transferred, recorded, and stored.
-                    </div>
-                    <hr>
-                    <div class="how-do-i">
-                        How do I start investing in cryptocurrency?
-                    </div>
-                    <div class="choose-a-reliable">
-                        Choose a reliable exchange, create an account, complete
-                        verification, deposit funds, and buy cryptocurrencies.
-                    </div>
-                </div>
-                <div class="FaqPart2">
-                    <div class="how-do-i1">
-                        How do I keep my cryptocurrency secure?
-                    </div>
-                    <div class="use-strong-passwords">
-                        Use strong passwords, enable two-factor authentication,
-                        and store your crypto in reputable wallets.
-                    </div>
-                    <hr>
-                    <div class="what-is-a1">
-                        What is a cryptocurrency wallet?
-                    </div>
-                    <div class="a-cryptocurrency-wallet">
-                        A cryptocurrency wallet is a digital tool for storing, sending,
-                        and receiving cryptocurrencies.
-                    </div>
-                    <hr>
-                    <div class="what-are-the">
-                        What are the most popular cryptocurrencies?
-                    </div>
-                    <div class="popular-cryptocurrencies-inclu">
-                        Popular cryptocurrencies include Bitcoin, Ethereum, Binance
-                        Coin, Cardano, and Solana.
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="cryptoAction">
-            <div class="pt-1">
-                <h1 class="get-it-on">Get It On The Crypto Action</h1>
-                <div class="provide-easy-access">
-                    Provide easy access to customer support through chatbots or
-                    live chat features.
-                </div>
-            </div>
-            <div class="contact-form">
-                <div class="email-topic">
-                    <div class="email-address">Email Address</div>
-                    <input
-                        class="topic-input"
-                        placeholder="Enter Email Address"
-                        type="text"
-                    />
-                </div>
-                <div class="email-topic1">
-                    <div class="your-topic">Your Topic</div>
-                    <input
-                        class="email-topic-child"
-                        placeholder="Enter Your Topic"
-                        type="text"
-                    />
-                </div>
-                <button class="send-message-button">
-                    <div class="send-message-button-child"></div>
-                    <div class="send-message">Send Message</div>
-                </button>
-            </div>
-        </section>
-    </div> 
-    <script src="https://kit.fontawesome.com/d22d53dd15.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="sectionPic bouncepic processesPic" id="sectionPic">
+            <img src="./img/chain-process-img.png" alt="">
+        </div>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <!-- Markets -->
+    <section class="gridSection">
+        <div class="sectionDesc marketDesc">
+            <h1 class="sectionHeader">Markets at finger</h1>
+            <p class="sectionPara">The Blockchain is a decentralized,
+                digital ledger of transactions that are recorded
+                confirmed
+            </p>
+            <div class="eachMarket">
+                <img src="./img/buy-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Buying</h1>
+                    <p class="darkPara">
+                        Best cryptocurrency exchanges currently purchase
+                        Bitcoin, Ethereum, and Litecoin other coins and tokens
+                        on the platform.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/trading-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Trading</h1>
+                    <p class="darkPara">
+                        The act of speculating on cryptocurrency price movements
+                        via a CFD trading account, or buying and selling.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/support-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Supporting</h1>
+                    <p class="darkPara">
+                        Don’t worry if you’re new to crypto and digital
+                        currencies – Skrill makes setting up a cryptocurrency
+                        wallet easy.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/online-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Online</h1>
+                    <p class="darkPara">
+                        Cryptocurrency, especially Bitcoin,
+                        has proven to be a popular trading
+                        vehicle, even if legendary investors
+                        as good.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionPic marketspicSection" id="sectionPic">
+            <h1 class="marketspicHeader">CRYPTOCURRENCY</h1>
+            <div class="marketsPicContainer">
+                <div class="marketPic marketPic1">
+                    <img src="./img/persent-icon-white.svg" alt="">
+                    <article class="marketTitle">Hot Sale</article>
+                </div>
+
+                <div class="marketPic marketPic2">
+                    <img src="./img/bitcoin-icon-white.svg" alt="">
+                    <article class="marketTitle">Bit coin</article>
+                </div>
+
+                <div class="marketPic marketPic3">
+                    <img src="./img/ethereum-white-icon.svg" alt="">
+                    <article class="marketTitle">ETHEREUM</article>
+                </div>
+
+                <div class="marketPic marketPic4">
+                    <img src="./img/handshake-icon-white.svg" alt="">
+                    <article class="marketTitle">CONNECTING</article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="gridSection">
+        <div class="sectionDesc dashboardDesc">
+            <h1 class="sectionHeader">Trade crypto in seconds</h1>
+            <p class="sectionPara">
+                But with prouple, you can mine bitcoin from your own phone!
+                You no longer have to worry about costly transactions.
+            </p>
+            <button class="btn" onclick="window.open('list.html')">Explore Now</button>
+        </div>
+
+        <div class="sectionPic dashboardPic">
+            <img src="./img/dashboard-dark.jpg" alt="">
+        </div>
+
+    </section>
+
+    <div class="fundSection">
+        <div class="sectionDesc">
+            <h1 class="sectionHeader">Control your funds</h1>
+            <p class="sectionPara">
+                Our mining pool offers some of the most competitive contracts in the market.
+            </p>
+            <div class="fundsContainer">
+                <div class="fund">
+                    <img src="./img/cryptocurrency-white-icon.svg" alt="cryptocurrency">
+                    <h1 class="fundType">Support All Currency</h1>
+                    <p class="darkPara">
+                        Accept and process payments from all types of currencies.
+                    </p>
+                </div>
+
+                <div class="fund">
+                    <img src="./img/blockchain-white-icon.svg" alt="cryptocurrency">
+                    <h1 class="fundType">Block Chain System</h1>
+                    <p class="darkPara">
+                        How it Works, Benefits and its Deployment in Financial
+                    </p>
+                </div>
+
+                <div class="fund">
+                    <img src="./img/cryptocurrency-sell-white-icon.svg" alt="cryptocurrency">
+                    <h1 class="fundType">Fund Selling</h1>
+                    <p class="darkPara">
+                        How to Profit in the Crypto Markets through Investing
+                    </p>
+                </div>
+
+                <div class="fund">
+                    <img src="./img/cryptocurrency-card-white-icon.svg" alt="cryptocurrency">
+                    <h1 class="fundType">Crypto Card</h1>
+                    <p class="darkPara">
+                        Crypto Cards and Why Cryptocurrency are the Future
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="gridSection">
+        <div class="sectionDesc newsletterDesc">
+            <h1 class="sectionHeader">Subscribe news!</h1>
+            <p class="sectionPara">
+                This is where crypto news websites come in handy and stay up-to-date this sphere.
+            </p>
+            <form action="#" class="newsletter">
+                <input type="email" name="" id="newsletter" placeholder="enter your email">
+                <button type="submit" class="btn primaryBtn">Subscribe</button>
+            </form>
+        </div>
+        <div class="sectionPic bouncepic newsletterPic">
+            <img src="./img/newsletter.png" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <div class="joinSection">
+            <div class="joinDesc">
+                <h1 class="sectionHeader">Join with us</h1>
+                <p class="sectionPara">
+                    Once you have created your account, you can purchase coins from website
+                </p>
+            </div>
+            <button class="btn primaryBtn">JOIN NOW</button>
+        </div>
+
+        <div class="footerlinksContainer">
+            <div class="footerAboutus">
+                <div>
+                    <span style="color: #00ffa0; font-size:20px;">Coin</span>
+                    <span style="color: #fff; font-size:30px;">Echo</span>
+                </div>
+                <p class="darkPara">With no commissions and a simple user interface,
+                    CoinEcho is the most reliable way to trade for
+                    Cryptocurrency.
+                </p>
+                <div class="footersociallinkContainer">
+                    <a href="https://www.facebook.com/"><img class="sociallink" src="./img/fabook-icon-white.svg"
+                            alt=""></a>
+                    <a
+                        href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D"><img
+                            class="sociallink" src="./img/twitter-icon-white.svg" alt=""></a>
+                    <a
+                        href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F"><img
+                            class="sociallink" src="./img/inkedin-icon-white.svg" alt=""></a>
+                    <a href="https://wa.me/+91112489987"><img class="sociallink" src="./img/whatsapp-icon-white.svg"
+                            alt=""></a>
+                </div>
+            </div>
+
+            <div class="footerlink">
+                <h1 class="linkTitle">Explore</h1>
+                <a href="#" class="eachLink">About us</a>
+                <a href="#" class="eachLink">FAQ</a>
+                <a href="#" class="eachLink">Blog</a>
+                <a href="#" class="eachLink">Contact</a>
+            </div>
+
+            <div class="footerlink">
+                <h1 class="linkTitle">Service</h1>
+                <a href="#" class="eachLink">Mining</a>
+                <a href="#" class="eachLink">Control Data</a>
+                <a href="#" class="eachLink">Design</a>
+                <a href="#" class="eachLink">Security</a>
+            </div>
+
+            <div class="footerlink">
+                <h1 class="linkTitle">Resource</h1>
+                <a href="#" class="eachLink">Style Guide</a>
+                <a href="#" class="eachLink">Change Log</a>
+                <a href="#" class="eachLink">License</a>
+            </div>
+        </div>
+
+        <div class="footerCopyright">
+            <p>&copy; 2024 design and developed by <a href="#" class="developedBy">CoinEcho</a>.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+    <script src="./home.js"></script>
 </body>
 
 </html>
