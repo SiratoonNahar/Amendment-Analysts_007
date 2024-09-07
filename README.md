@@ -10,7 +10,7 @@ This project is a cryptocurrency educational platform designed to provide users 
 Frontend 
 
 ## Deplolyed App
-[Frontend](https://669d2b3d09fafc91ff47889a--neon-custard-b4a2d5.netlify.app/)
+Frontend: (https://669d2b3d09fafc91ff47889a--neon-custard-b4a2d5.netlify.app/)
 
 ## Features
 Homepage: Introduction to the cryptocurrency platform, highlights of popular cryptocurrencies, website features, and testimonials with scroll animations.
